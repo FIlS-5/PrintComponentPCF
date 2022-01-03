@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="reliance" constructor="PrintComponent" version="0.0.1" display-name-key="Printer Control" description-key="Allow you to print and download HTML code section" control-type="standard">
+    <property name="htmlContent" display-name-key="HTML Content" description-key="This is the HTML content to be printed and downloaded" of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="download" display-name-key="Dowload" description-key="Setting this value to true will start the download process" of-type="TwoOptions" usage="bound" required="true" default-value="false" />
+    <property name="printTitle" display-name-key="Title of content" description-key="This is the title for the content to be printed and downloaded" of-type="SingleLine.Text" usage="bound" default-value="PRINT" required="true" />
+    <resources>
+      <code path="index.ts" order="1"/>
+    </resources>
+  </control>
+</manifest>
